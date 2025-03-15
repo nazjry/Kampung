@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post</title>
+    <title>Nazjry Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,182 +11,100 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
         header {
-            background: #333;
+            background-color: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77d42a 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            margin: 0;
-            display: flex;
-            justify-content: flex-end;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main {
             padding: 20px;
-            background: #fff;
-            margin-top: 30px;
-        }
-        .main h1 {
             text-align: center;
-            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .post {
             margin-bottom: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            background: #fff;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .post:last-child {
+            border-bottom: none;
         }
         .post h2 {
             margin-top: 0;
         }
-        .form-container {
-            margin-top: 30px;
+        .post p {
+            line-height: 1.6;
         }
-        .form-container form {
-            display: flex;
-            flex-direction: column;
+        .post img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
         }
-        .form-container input, .form-container textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .form-container input[type="submit"] {
-            background: #333;
-            color: #fff;
-            border: 0;
-            cursor: pointer;
-        }
-        .form-container input[type="submit"]:hover {
-            background: #77d42a;
-        }
-        .form-container input[type="file"] {
-            padding: 5px;
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><a href="#">Blog</a></h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+        <h1>Nazjry Blog</h1>
+        <p>Temukan berbagai artikel menarik di sini.</p>
     </header>
-    <div class="container main">
-        <h1>Blog Posts</h1>
-        <div id="posts">
-            <!-- Dynamic blog posts will be inserted here -->
+
+    <div class="container">
+        <div class="post">
+            <h2>Inter Milan Tilxung Manchester City Dalam Perburuan Tajon Buchanan</h2>
+            <p>24 Des 2023</p>
+            <img src="https://via.placeholder.com/800x400" alt="Contoh Gambar 1">
+            <p>Inter Milan dan Manchester City bersaing untuk mendapatkan tanda tangan Tajon Buchanan, pemain berbakat asal Kanada.</p>
         </div>
-        <div class="form-container">
-            <h2>Add a New Post</h2>
-            <form id="postForm">
-                <input type="text" id="title" placeholder="Title" required>
-                <textarea id="content" placeholder="Content" required></textarea>
-                <input type="text" id="imageUrl" placeholder="Image URL (optional)">
-                <input type="text" id="videoUrl" placeholder="Video URL (optional)">
-                <input type="text" id="linkUrl" placeholder="Link URL (optional)">
-                <input type="text" id="linkText" placeholder="Link Text (optional)">
-                <input type="file" id="imageUpload" accept="image/*">
-                <input type="file" id="videoUpload" accept="video/*">
-                <input type="submit" value="Add Post">
-            </form>
+
+        <div class="post">
+            <h2>Profil Tajon Buchanan, Pemain Baru Inter Asal Kanada yang Dikejar-kejar Man City</h2>
+            <p>2 Jan 2024</p>
+            <img src="https://via.placeholder.com/800x400" alt="Contoh Gambar 2">
+            <p>Radartasik.id membahas profil Tajon Buchanan, pemain baru Inter Milan yang juga diminati oleh Manchester City.</p>
+        </div>
+
+        <div class="post">
+            <h2>Dumfries and Acerbi out for Leverkusen clash, Buchanan in</h2>
+            <p>10 Des 2024</p>
+            <img src="https://via.placeholder.com/800x400" alt="Contoh Gambar 3">
+            <p>BeSoccer melaporkan bahwa Dumfries dan Acerbi akan absen dalam pertandingan melawan Leverkusen, sementara Buchanan akan bermain.</p>
+        </div>
+
+        <div class="post">
+            <h2>Fashion director Edward Buchanan: ‘Luxury isn’t what it used to be’</h2>
+            <p>2 minggu lalu</p>
+            <img src="https://via.placeholder.com/800x400" alt="Contoh Gambar 4">
+            <p>glossy.co mewawancarai Edward Buchanan, direktur fashion, tentang perubahan dalam konsep luxury.</p>
+        </div>
+
+        <div class="post">
+            <h2>Roald T. Smith Obituary December 20, 2024</h2>
+            <p>20 Des 2024</p>
+            <img src="https://via.placeholder.com/800x400" alt="Contoh Gambar 5">
+            <p>Flanner Buchanan mempublikasikan obituari untuk Roald T. Smith.</p>
         </div>
     </div>
-    <script>
-        document.getElementById('postForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const title = document.getElementById('title').value;
-            const content = document.getElementById('content').value;
-            const imageUrl = document.getElementById('imageUrl').value;
-            const videoUrl = document.getElementById('videoUrl').value;
-            const linkUrl = document.getElementById('linkUrl').value;
-            const linkText = document.getElementById('linkText').value;
-            const imageUpload = document.getElementById('imageUpload').files[0];
-            const videoUpload = document.getElementById('videoUpload').files[0];
-
-            if (title && content) {
-                const post = document.createElement('div');
-                post.classList.add('post');
-                post.innerHTML = '<h2>' + title + '</h2><p>' + content + '</p>';
-
-                if (imageUrl) {
-                    const img = document.createElement('img');
-                    img.src = imageUrl;
-                    img.alt = 'Image';
-                    img.style.maxWidth = '100%';
-                    post.appendChild(img);
-                }
-
-                if (videoUrl) {
-                    const video = document.createElement('video');
-                    video.src = videoUrl;
-                    video.controls = true;
-                    video.style.maxWidth = '100%';
-                    post.appendChild(video);
-                }
-
-                if (linkUrl && linkText) {
-                    const link = document.createElement('a');
-                    link.href = linkUrl;
-                    link.textContent = linkText;
-                    link.target = '_blank';
-                    post.appendChild(link);
-                }
-
-                if (imageUpload) {
-                    const reader = new FileReader();
-                    reader.onload = function (e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.alt = 'Image';
-                        img.style.maxWidth = '100%';
-                        post.appendChild(img);
-                    }
-                    reader.readAsDataURL(imageUpload);
-                }
-
-                if (videoUpload) {
-                    const reader = new FileReader();
-                    reader.onload = function (e) {
-                        const video = document.createElement('video');
-                        video.src = e.target.result;
-                        video.controls = true;
-                        video.style.maxWidth = '100%';
-                        post.appendChild(video);
-                    }
-                    reader.readAsDataURL(videoUpload);
-                }
-
-                document.getElementById('posts').appendChild(post);
-                document.getElementById('postForm').reset();
-            } else {
-                alert('Please fill out the title and content fields.');
-            }
-        });
-    </script>
 </body>
 </html>
